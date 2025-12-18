@@ -1,15 +1,94 @@
+import csv
+import random
 import time
-from devices import devices
-from gateway import Gateway
-# import random
+from datetime import datetime
 
-gateway = Gateway()
 
-# Simulation loop (Day 1)
-for _ in range(10):
-    for device in devices:
-        packet = device.generate_packet()
-        gateway.log_packet(packet)
-        print(f"Logged packet from {device.name}: {packet}")
-        print("---------------------------------------------------------")
-    time.sleep(1)
+OUTPUT_FILE = "week2_day2_gateway_traffic.csv"
+
+# Device definitions
+DEVICES = [
+    "Temperature Sensor",
+    "Motion Sensor",
+    "Smart Plug",
+    "Lighting Controller",
+    "Low-Cost IP Camera"]
+
+
+def generate_normal_packet(device):
+    """Generate normal traffic behavior"""
+    packet_sizes = {
+        "Temperature Sensor": random.randint(50, 100),
+        "Motion Sensor": random.randint(60, 120),
+        "Smart Plug": random.randint(70, 150),
+        "Lighting Controller": random.randint(80, 200),
+        "Low-Cost IP Camera": random.randint(500, 1500)}
+
+    protocols = {
+        "Temperature Sensor": "MQTT",
+        "Motion Sensor": "MQTT",
+        "Smart Plug": "CoAP / MQTT",
+        "Lighting Controller": "CoAP",
+        "Low-Cost IP Camera": "RTSP / TCP"}
+
+    directions = {
+        "Temperature Sensor": "Device -> Gateway",
+        "Motion Sensor": "Device -> Gateway",
+        "Smart Plug": "Device <-> Gateway",
+        "Lighting Controller": "Device <-> Gateway",
+        "Low-Cost IP Camera": "Device -> Gateway -> Cloud"}
+
+    bursts = {
+        "Temperature Sensor": "None",
+        "Motion Sensor": "Small bursts",
+        "Smart Plug": "Short bursts on toggle",
+        "Lighting Controller": "Small bursts on state change",
+        "Low-Cost IP Camera": "Continuous during streaming"}
+
+    return {
+        "timestamp": datetime.now().isoformat(),
+        "device": device,
+        "size": packet_sizes[device],
+        "direction": directions[device],
+        "protocol": protocols[device],
+        "burst": bursts[device],
+        "label": "normal"}
+
+
+def generate_attack_packet(device):
+    """Generate abnormal (botnet/flooding) behavior"""
+    return {
+        "timestamp": datetime.now().isoformat(),
+        "device": device,
+        "size": random.randint(200, 600),
+        "direction": "Device -> Gateway -> External",
+        "protocol": "MQTT", 
+        "burst": "High-frequency flooding",
+        "label": "attack"}
+
+
+def main():
+    with open(OUTPUT_FILE, mode="w", newline="") as file:
+        writer = csv.DictWriter(file,fieldnames=["timestamp","device","size","direction","protocol", "burst","label"])
+        
+        writer.writeheader()
+        print("[*] Generating traffic...")
+
+        for _ in range(20):  # simulation duration
+            # Normal traffic from all devices
+            for device in DEVICES:
+                packet = generate_normal_packet(device)
+                writer.writerow(packet)
+
+            # Attack traffic from ONE compromised device
+            attack_packet = generate_attack_packet("Temperature Sensor")
+            writer.writerow(attack_packet)
+
+            time.sleep(1)
+        
+        print("[**]Traffic generation completed.")
+        
+        
+
+if __name__ == "__main__":
+    main()
