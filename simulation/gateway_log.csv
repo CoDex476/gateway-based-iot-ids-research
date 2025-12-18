@@ -1,0 +1,51 @@
+timestamp,device,size,direction,protocol,burst
+2025-12-18T16:49:45.825929,Temperature Sensor,67,Device -> Gateway,MQTT,None
+2025-12-18T16:49:45.826492,Motion Sensor,78,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:45.827363,Smart Plug,74,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:45.827910,Lighting Controller,152,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:45.828580,Low-Cost IP Camera,1428,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:46.829755,Temperature Sensor,78,Device -> Gateway,MQTT,None
+2025-12-18T16:49:46.831369,Motion Sensor,96,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:46.832354,Smart Plug,139,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:46.832992,Lighting Controller,145,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:46.833647,Low-Cost IP Camera,646,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:47.834740,Temperature Sensor,61,Device -> Gateway,MQTT,None
+2025-12-18T16:49:47.836298,Motion Sensor,74,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:47.837187,Smart Plug,99,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:47.837970,Lighting Controller,163,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:47.838593,Low-Cost IP Camera,1200,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:48.839941,Temperature Sensor,52,Device -> Gateway,MQTT,None
+2025-12-18T16:49:48.841052,Motion Sensor,87,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:48.841774,Smart Plug,134,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:48.842635,Lighting Controller,138,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:48.843293,Low-Cost IP Camera,881,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:49.844530,Temperature Sensor,78,Device -> Gateway,MQTT,None
+2025-12-18T16:49:49.845494,Motion Sensor,119,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:49.846260,Smart Plug,92,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:49.847165,Lighting Controller,131,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:49.847981,Low-Cost IP Camera,507,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:50.849334,Temperature Sensor,66,Device -> Gateway,MQTT,None
+2025-12-18T16:49:50.850702,Motion Sensor,117,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:50.851363,Smart Plug,129,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:50.852030,Lighting Controller,182,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:50.852679,Low-Cost IP Camera,893,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:51.853904,Temperature Sensor,51,Device -> Gateway,MQTT,None
+2025-12-18T16:49:51.855360,Motion Sensor,65,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:51.856313,Smart Plug,128,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:51.857073,Lighting Controller,137,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:51.857754,Low-Cost IP Camera,1420,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:52.859504,Temperature Sensor,85,Device -> Gateway,MQTT,None
+2025-12-18T16:49:52.861100,Motion Sensor,113,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:52.862014,Smart Plug,97,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:52.862669,Lighting Controller,138,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:52.863308,Low-Cost IP Camera,944,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:53.864371,Temperature Sensor,77,Device -> Gateway,MQTT,None
+2025-12-18T16:49:53.865873,Motion Sensor,78,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:53.866856,Smart Plug,87,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:53.867720,Lighting Controller,129,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:53.868423,Low-Cost IP Camera,531,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
+2025-12-18T16:49:54.869689,Temperature Sensor,62,Device -> Gateway,MQTT,None
+2025-12-18T16:49:54.871173,Motion Sensor,78,Device -> Gateway,MQTT,Small bursts
+2025-12-18T16:49:54.872061,Smart Plug,137,Device <-> Gateway,CoAP / MQTT,Short bursts on toggle
+2025-12-18T16:49:54.872679,Lighting Controller,122,Device <-> Gateway,CoAP,Small bursts on state change
+2025-12-18T16:49:54.873314,Low-Cost IP Camera,1287,Device -> Gateway -> Cloud,RTSP / TCP,Continuous during streaming
