@@ -1,0 +1,26 @@
+time_window,device,packet_count,avg_packet_size,max_packet_size,unique_directions,burst_rate,label,attack_type
+353216683,Temperature Sensor,8,215.38,545,2,0.5,normal,none
+353216683,Motion Sensor,8,84.12,106,1,0.5,normal,none
+353216683,Smart Plug,8,94.38,146,2,0.5,normal,none
+353216683,Lighting Controller,4,105.5,135,1,0.0,normal,none
+353216683,Low-Cost IP Camera,4,874.25,1247,1,0.0,normal,none
+353216684,Temperature Sensor,10,209.3,492,2,0.5,normal,none
+353216684,Motion Sensor,10,87.3,119,1,0.5,normal,none
+353216684,Smart Plug,10,81,139,2,0.5,normal,none
+353216684,Lighting Controller,5,123.2,149,1,0.0,normal,none
+353216684,Low-Cost IP Camera,5,1197.2,1333,1,0.0,normal,none
+353216685,Temperature Sensor,10,223.6,548,2,0.5,normal,none
+353216685,Motion Sensor,10,99.5,117,1,0.5,normal,none
+353216685,Smart Plug,10,84.1,110,2,0.5,normal,none
+353216685,Lighting Controller,5,156.4,194,1,0.0,normal,none
+353216685,Low-Cost IP Camera,5,753.6,988,1,0.0,normal,none
+353216686,Temperature Sensor,10,243.7,521,2,0.5,normal,none
+353216686,Motion Sensor,10,94,119,1,0.5,normal,none
+353216686,Smart Plug,10,80.5,131,2,0.5,normal,none
+353216686,Lighting Controller,5,147.8,199,1,0.0,normal,none
+353216686,Low-Cost IP Camera,5,922.8,1329,1,0.0,normal,none
+353216687,Temperature Sensor,2,166.5,271,2,0.5,normal,none
+353216687,Motion Sensor,2,72,84,1,0.5,normal,none
+353216687,Smart Plug,2,96.5,126,2,0.5,normal,none
+353216687,Lighting Controller,1,162,162,1,0.0,normal,none
+353216687,Low-Cost IP Camera,1,536,536,1,0.0,normal,none
